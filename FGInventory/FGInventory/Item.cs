@@ -17,7 +17,7 @@ namespace FGInventory
             _name = name;
         }
 
-        public void AddItems(int quant)
+        public virtual void AddItems(int quant)
         {
             _quantity += quant;
         }
@@ -32,7 +32,7 @@ namespace FGInventory
             return _quantity;
         }
 
-        public int GetName()
+        public string GetName()
         {
             return _name;
         }

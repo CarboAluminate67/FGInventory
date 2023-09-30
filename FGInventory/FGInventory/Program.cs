@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using FGInventory;
+
+Perish item = new Perish("potatoes", 3, 31);
+
+Console.WriteLine(item.GetExpiresOn());

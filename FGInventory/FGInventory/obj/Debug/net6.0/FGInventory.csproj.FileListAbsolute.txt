@@ -1,0 +1,14 @@
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\bin\Debug\net6.0\FGInventory.exe
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\bin\Debug\net6.0\FGInventory.deps.json
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\bin\Debug\net6.0\FGInventory.runtimeconfig.json
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\bin\Debug\net6.0\FGInventory.dll
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\bin\Debug\net6.0\FGInventory.pdb
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.AssemblyInfoInputs.cache
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.AssemblyInfo.cs
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.csproj.CoreCompileInputs.cache
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.dll
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\refint\FGInventory.dll
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.pdb
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\FGInventory.genruntimeconfig.cache
+C:\Users\alext\OneDrive\Documents\BYUI\Junior\cse310\FGInventoryInC#\FGInventory\FGInventory\obj\Debug\net6.0\ref\FGInventory.dll
