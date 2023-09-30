@@ -1,15 +1,15 @@
-public class Items
+public abstract class Item
 {
     private int _quantity;
     private string _name;
 
-    public Items(int quant, string name)
+    public Item(string name, int quant)
     {
         _quantity = quant;
         _name = name;
     }
 
-    public void AddItems(int quant)
+    public virtual void AddItems(int quant)
     {
         _quantity += quant;
     }
