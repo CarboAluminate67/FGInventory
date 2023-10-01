@@ -11,6 +11,7 @@ namespace FGInventory
         private int _expireTime;
         private string _expiresOn;
 
+
         public Perish(string name, int quant, int exp) : base(name, quant)
         {
             _expireTime = exp;
@@ -19,7 +20,7 @@ namespace FGInventory
             _expiresOn = date.ToShortDateString();
         }
 
-        public int GetExp()
+        public override int GetExp()
         {
             return _expireTime;
         }
@@ -32,9 +33,24 @@ namespace FGInventory
             _expiresOn = date.ToShortDateString();
         }
 
-        public string GetExpiresOn()
+        public override string GetExpiresOn()
         {
             return _expiresOn;
+        }
+
+        public override void UseItem(int quant)
+        {
+            base.UseItem(quant);
+            if (_quantity <= 0)
+            {
+                _expiresOn = "N/A";
+            }
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"; {_expireTime}; {_expiresOn}";
         }
     }
 }

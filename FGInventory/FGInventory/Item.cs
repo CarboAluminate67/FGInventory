@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FGInventory
 {
-    public class Item
+    public abstract class Item
     {
-        private int _quantity;
+        protected int _quantity;
         private string _name;
 
         public Item(string name, int quant)
@@ -36,5 +36,19 @@ namespace FGInventory
         {
             return _name;
         }
+
+        public virtual void UseItem(int quant)
+        {
+            _quantity -= quant;
+        }
+
+        public new virtual string ToString()
+        {
+            return $"{_name}; {_quantity}";
+        }
+
+        public abstract string GetPack();
+        public abstract string GetExpiresOn();
+        public abstract int GetExp();
     }
 }

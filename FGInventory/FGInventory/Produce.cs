@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FGInventory
 {
-    internal class Produce
+    public class Produce
     {
     }
 }
