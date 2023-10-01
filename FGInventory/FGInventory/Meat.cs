@@ -10,17 +10,17 @@ namespace FGInventory
     {
         private string _packDate;
 
-        public Meat(string name, int quant, int exp, string pack) : base(name, quant, exp)
+        public Meat(string name, int quant, int exp, string pack) : base(name, quant, exp) //initializer
         {
             _packDate = pack;
         }
 
-        public string GetPack()
+        public string GetPack() // Various getters and setters
         {
             return _packDate;
         }
 
-        public override void UseItem(int quant)
+        public override void UseItem(int quant) // Adds pack date to use item function in base class
         {
             base.UseItem(quant);
             if (_quantity <= 0)
@@ -29,9 +29,9 @@ namespace FGInventory
             }
         }
 
-        public override string ToString()
+        public override string MakeString() //serializes object into string
         {
-            return base.ToString() + $"; {_packDate}";
+            return base.MakeString() + $"; {_packDate}";
         }
     }
 }

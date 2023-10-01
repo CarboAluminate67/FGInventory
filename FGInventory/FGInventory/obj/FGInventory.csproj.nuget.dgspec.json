@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj": {}
+    "C:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj": {}
   },
   "projects": {
-    "c:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj": {
+    "C:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj",
+        "projectUniqueName": "C:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj",
         "projectName": "FGInventory",
-        "projectPath": "c:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj",
+        "projectPath": "C:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\FGInventory.csproj",
         "packagesPath": "C:\\Users\\alext\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\obj\\",
+        "outputPath": "C:\\Users\\alext\\OneDrive\\Documents\\BYUI\\Junior\\cse310\\FGInventoryInC#\\FGInventory\\FGInventory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alext\\AppData\\Roaming\\NuGet\\NuGet.Config",

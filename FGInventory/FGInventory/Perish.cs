@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Perishable class
+
 namespace FGInventory
 {
     public class Perish : Item
@@ -12,12 +14,12 @@ namespace FGInventory
         private string _expiresOn;
 
 
-        public Perish(string name, int quant, int exp) : base(name, quant)
+        public Perish(string name, int quant, int exp) : base(name, quant) //Initializer
         {
             _expireTime = exp;
-            DateTime date = DateTime.Today;
+            DateTime date = DateTime.Now;
             date = date.AddDays(_expireTime);
-            _expiresOn = date.ToShortDateString();
+            _expiresOn = date.ToString("MM-dd");
         }
 
         public override int GetExp()
@@ -25,15 +27,15 @@ namespace FGInventory
             return _expireTime;
         }
 
-        public override void AddItems(int quant)
+        public override void AddItems(int quant) //Creates Items and calculates date of expiration
         {
             base.AddItems(quant);
-            DateTime date = DateTime.Today;
+            DateTime date = DateTime.Now;
             date = date.AddDays(_expireTime);
-            _expiresOn = date.ToShortDateString();
+            _expiresOn = date.ToString("MM-dd");
         }
 
-        public override string GetExpiresOn()
+        public override string GetExpiresOn() // various getters and setters
         {
             return _expiresOn;
         }
@@ -48,9 +50,9 @@ namespace FGInventory
 
         }
 
-        public override string ToString()
+        public override string MakeString() //serializes object into string
         {
-            return base.ToString() + $"; {_expireTime}; {_expiresOn}";
+            return base.MakeString() + $"; {_expireTime}; {_expiresOn}";
         }
     }
 }

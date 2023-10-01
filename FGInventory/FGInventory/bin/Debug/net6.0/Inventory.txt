@@ -1,0 +1,3 @@
+gloves; 11
+Cups; 7
+lids; 10

@@ -5,26 +5,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// class to handle menu navigation
+
 namespace FGInventory
 {
     public class Menu
     {
-        private List<Item> _items = new List<Item>();
-        public Menu()
+        private List<Item> _items = new List<Item>(); 
+        public Menu() // initializer
         { }
 
-        public void ListItems()
+        public void ListItems() // view inventory
         {
             foreach(Item item in _items)
             {
                 Console.Write($"Item: {item.GetName()}, Number on hand: {item.GetQuant()}");
                 if (item.GetType().Name == "Perish")
                 {
-                    Console.Write($", {item.GetExp().ToString()}");
+                    Console.Write($", {item.GetExp().ToString()} day shelf life; expires on {item.GetExpiresOn}");
                 }
+                else if (item.GetType().Name == "Meat")
+                {
+                    Console.Write($", pack date: {item.GetPack()}, {item.GetExp().ToString()} day shelf life; expires on {item.GetExpiresOn}");
+                }
+                Console.WriteLine();
             }
+            Console.WriteLine("Press enter to continue");
+            Console.ReadLine();
         }
-        public void NewItem(string type, string name, int quant, int exp = 0, string pack = "")
+        public void NewItem(string type, string name, int quant, int exp = 0, string pack = "") // make new item in list
         {
             if (type.ToLower() == "dry")
             {
@@ -33,7 +42,7 @@ namespace FGInventory
 
             else
             {
-                if (type.ToLower() == "Meat")
+                if (type.ToLower() == "meat")
                 {
                     _items.Add(new Meat(name, quant, exp, pack));
                 }
@@ -54,19 +63,19 @@ namespace FGInventory
             item.UseItem(quant);
         }
 
-        public void save()
+        public void Save() // save to txt file
         {
             File.WriteAllText("./Inventory.txt", String.Empty);
-            using (StreamWriter writer = new StreamWriter($"./FGInventory.txt"))
+            using (StreamWriter writer = new StreamWriter("./Inventory.txt"))
             {
                 foreach (Item item in _items)
                 {
-                    writer.WriteLine(item.ToString());
+                    writer.WriteLine(item.MakeString());
                 }
             }
         }
 
-        public void load()
+        public void Load() // load from file
         {
             _items.Clear();
             String[] lines = File.ReadAllLines("./Inventory.txt");
@@ -86,6 +95,10 @@ namespace FGInventory
                     _items.Add(new Meat(parts[0], int.Parse(parts[1]), int.Parse(parts[2]), parts[4]));
                 }
             }
+        }
+        public List<Item> GetItems() // getter
+        {
+            return _items;
         }
     }
 }
